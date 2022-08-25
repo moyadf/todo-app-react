@@ -1,0 +1,96 @@
+.todoContainer {
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoContainerTitle {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.todoCreateForm {
+  display: flex;
+  gap: 5px;
+}
+
+.todoInput {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #999;
+}
+
+.todoCreate,
+.updateButton {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.todoCreate {
+  background-color: rgb(26, 76, 169);
+  width: 200px;
+}
+
+.todoCreate[disabled],
+.updateButton[disabled] {
+  opacity: 0.5;
+}
+
+.updateButton {
+  background-color: rgb(26, 169, 102);
+}
+
+.todosList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.todoItem {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoTitle {
+  flex: 1;
+  font-size: 20px;
+}
+
+.todoUpdate,
+.todoInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.buttonEdit,
+.buttonDelete {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 0 0 0.5rem;
+  cursor: pointer;
+}
+
+.buttonEdit {
+  background-color: rgb(72, 122, 221);
+}
+
+.buttonDelete {
+  background-color: rgb(169, 26, 26);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 0.75rem;
+}
